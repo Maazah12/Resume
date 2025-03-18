@@ -1,0 +1,162 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Resume Container */
+.resume-container {
+    display: flex;
+    max-width: 900px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+    width: 30%;
+    background: #2a0979;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-sidebar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+
+.left-sidebar h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.contact, .skills, .languages, .hobbies {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact h3, .skills h3, .languages h3, .hobbies h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: circle;
+    padding: 5px;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Right Content */
+.right-content {
+    width: 70%;
+    padding: 20px;
+}
+
+/* About Me */
+.about h2 {
+    color: #2a0979;
+    border-bottom: 3px solid #1f3a52;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about p {
+    text-align: justify;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Work Experience */
+.work-experience h2 {
+    color: #2a0979;
+    border-bottom: 3px solid #2a0979;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.job {
+    margin-top: 15px;
+}
+
+.job h3 {
+    margin: 0;
+    color: #2a0979;
+    font-size: 18px;
+}
+
+.job p {
+    color: #4d2fbb;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.job ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.job ul li {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Education */
+.education {
+    margin-top: 20px;
+}
+
+.education h2 {
+    color: #2a0979;
+    border-bottom: 3px solid #2a0979;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.edu-item {
+    margin-top: 15px;
+    padding: 10px;
+    border-left: 4px solid #2a0979;
+    background: white;
+    border-radius: 5px;
+}
+
+.edu-item h3 {
+    margin: 0;
+    color: #2a0979;
+    font-size: 18px;
+}
+
+.edu-item p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .left-sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-content {
+        width: 100%;
+    }
+}
